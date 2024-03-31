@@ -3,7 +3,7 @@
 /*有线网卡文件名*/
 #define ETH_IF          "eth0"
 /*i2c设备文件名*/
-#define LINUX_IIC_FILE  "/dev/i2c-3"
+#define LINUX_IIC_FILE  "/dev/i2c-1"
 /*刷新时间(s)*/
 #define REFRESH_TIME    1
 

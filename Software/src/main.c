@@ -62,10 +62,10 @@ int main(int argc, char* argv[])
     if (!(argc >= 2 && !strcmp(argv[1], "-r")))
     {
         SSD1306_FillRect2(2, 0, 5, 128, White);
-        SSD1306_PutString(21, 2, "OrangePi 4 LTS", MF_6x8, White);
-        SSD1306_PutString(15, 16, "AQin", MF_16x26, White);
-        SSD1306_PutString(90, 25, "</>", MF_11x18, White);
-        SSD1306_PutString(15, 52, "Ubuntu 20.04.6", MF_6x8, White);
+        SSD1306_PutString(21, 2, "Panther X2 LTS", MF_6x8, White);
+        SSD1306_PutString(15, 16, "HiAsia", MF_16x26, White);
+        SSD1306_PutString(90, 25, "", MF_11x18, White);
+        SSD1306_PutString(15, 52, "Debian 12", MF_6x8, White);
         SSD1306_UpdateScreen();
         sleep(3);
     }
