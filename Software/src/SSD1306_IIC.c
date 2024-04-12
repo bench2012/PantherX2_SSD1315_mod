@@ -37,6 +37,7 @@ void SSD1306_Init()
     wiringPiSetupSys();
     fd = wiringPiI2CSetupInterface(LINUX_IIC_FILE, OLED_ADDR);
     /*初始化*/
+    WriteCmd(0xE4);     // Reset Display just in case
     WriteCmd(0xAE);     //关闭显示
 
     WriteCmd(0xA8);     //设置多路复用比例，默认A8h，63
