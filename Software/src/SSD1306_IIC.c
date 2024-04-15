@@ -107,6 +107,7 @@ void SSD1306_InvertColor(SSD1306_State state)
 
 void SSD1306_ClearScreen()
 {
+    WriteCmd(0xE4);     // Reset Display just in case
     memset(SSD1306_Buffer, 0x00, BUFFER_SIZE);
 
 #ifndef FULL_REFRESH
