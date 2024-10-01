@@ -219,10 +219,12 @@ void SSD1306_PutString(uint8_t x, uint8_t y, char *c, MatrixFont font, SSD1306_C
 
 }
 
-void SSD1306_SetContrast(uint8_t val)
+void SSD1306_SetContrast(uint8_t val, uint8_t val2)
 {
     WriteCmd(0x81);
     WriteCmd(val);
+    WriteCmd(0xD9);
+    WriteCmd(val2);   
 }
 
 void SSD1306_DrawLine(uint8_t start_x, uint8_t start_y, uint8_t end_x, uint8_t end_y, SSD1306_Color color)
