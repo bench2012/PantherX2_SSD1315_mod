@@ -68,6 +68,9 @@ int main(int argc, char* argv[])
         SSD1306_PutString(15, 52, "Bookworm", MF_6x8, White);
         SSD1306_UpdateScreen();
         sleep(3);
+        SSD1306_SetContrast(128,14); /* Dim display */
+        SSD1306_ClearScreen();
+        
     }
     
     while (1)
