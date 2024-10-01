@@ -51,7 +51,7 @@ void SSD1306_FullScreen();
 void SSD1306_UpdateScreen();
 
 //Display Function
-void SSD1306_SetContrast(uint8_t val);
+void SSD1306_SetContrast(uint8_t val, uint8_t val2);
 void SSD1306_TurnOn(SSD1306_State state);
 void SSD1306_InvertColor(SSD1306_State state);
 
